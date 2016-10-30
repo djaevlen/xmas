@@ -16,6 +16,7 @@ $font-family-base:       $font-family-sans-serif !default;
     width: 100%;
     overflow: hidden;
     margin-bottom: 100px;
+    position: relative;
     video#bgvid { 
         position: relative;
         top: 0px;
@@ -55,6 +56,14 @@ $font-family-base:       $font-family-sans-serif !default;
                 font-size: 30px;
                 color: #ffffff;
                 text-shadow: 2px 2px #000;
+            }
+            svg {
+                position: absolute;
+                bottom: -50px;
+                left: 50%;
+                width: 30px;
+                height: 30px;
+                margin-left: -15px;
             }
         }
     }

@@ -4985,7 +4985,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  position: relative; }
   .splash-wrapper video#bgvid {
     position: relative;
     top: 0px;
@@ -5021,6 +5022,13 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
         font-size: 30px;
         color: #ffffff;
         text-shadow: 2px 2px #000; }
+      .splash-wrapper .splash .headline svg {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        width: 30px;
+        height: 30px;
+        margin-left: -15px; }
 
 .agenda {
   margin-bottom: 75px; }
