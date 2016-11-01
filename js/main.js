@@ -1,10 +1,12 @@
 jQuery(document).ready(function($) {
-    
+    var videoheight = $('video').outerHeight();
+    $('.fallback').css('height', videoheight);
     setTimeout(function(){
-        var videoheight = $('video').outerHeight();
+        videoheight = $('video').outerHeight();
         var h1_top = (videoheight / 2);
         console.log(videoheight);
         $('.splash').css('height', videoheight);
+        $('.fallback').css('height', videoheight);
         $('.splash').css('top', h1_top);
         $('.splash .headline').fadeIn(3000);
     }, 1000);

@@ -4998,12 +4998,24 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     z-index: -100;
     background-size: cover;
     margin-bottom: -10px; }
+  .splash-wrapper .fallback {
+    background: url("https://s3.amazonaws.com/planday-marketing/mobile.jpg") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0; }
   .splash-wrapper .splash {
     width: 100%;
     background: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 30%;
     left: 50%;
+    z-index: 100;
     min-width: 100%;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
@@ -5074,7 +5086,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
         width: 30px;
         height: 30px; }
   .dresscode img {
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2); }
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    width: 100%; }
   .dresscode h4 {
     font-size: 26px; }
   .dresscode h5 {
@@ -5126,5 +5139,14 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .splash-wrapper .headline h1 {
     font-size: 60px !important; }
 
+  .splash-wrapper #arrow {
+    display: none; }
+
   .splash-wrapper .headline h4 {
-    font-size: 20px !important; } }
+    font-size: 20px !important; }
+
+  .splash-wrapper .fallback {
+    display: block; }
+
+  .splash-wrapper .splash {
+    background: transparent; } }
