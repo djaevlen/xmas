@@ -208,6 +208,17 @@ $font-family-base:       $font-family-sans-serif !default;
 
 
 @media only screen and (max-width: 768px){
+
+    body h2 {
+        font-size: 40px!important;
+    }
+    body h2 span svg {
+        position: absolute!important;
+        top: 4px!important;
+        right: -10px!important;
+        width: 20px!important;
+        height: 20px!important;
+    }
     .splash-wrapper .headline h1 {
         font-size: 60px!important;
     }
