@@ -14,8 +14,9 @@ $font-family-base:       $font-family-sans-serif !default;
 .splash-wrapper {
     height: 100%;
     width: 100%;
+
     overflow: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     position: relative;
     video#bgvid { 
         position: relative;
@@ -27,7 +28,7 @@ $font-family-base:       $font-family-sans-serif !default;
         height: 100%;
         z-index: -100;
         background-size: cover; 
-
+        margin-bottom: -10px;
     }
     .splash {
         // height: 100%;
@@ -64,6 +65,9 @@ $font-family-base:       $font-family-sans-serif !default;
                 width: 30px;
                 height: 30px;
                 margin-left: -15px;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -71,10 +75,26 @@ $font-family-base:       $font-family-sans-serif !default;
 
 .agenda {
     margin-bottom: 75px;
-    
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    background: #eee;
     h2 {
         margin-bottom: 50px;
         font-size: 50px;
+        display: block;
+        position: relative;
+        span {
+            position: relative;
+            svg {
+                position: absolute;
+                top: 2px;
+                right: -16px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        
     }
     h4 {
         font-size: 26px;
@@ -84,14 +104,81 @@ $font-family-base:       $font-family-sans-serif !default;
     }
 }
 
-.awards {
+.dresscode {
+    margin-bottom: 75px;
+    padding-bottom: 50px;
+    h2 {
+        margin-bottom: 50px;
+        font-size: 50px;
+        display: block;
+        position: relative;
+        span {
+            position: relative;
+            svg {
+                position: absolute;
+                top: 2px;
+                right: -16px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        
+    }
+    img {
+        box-shadow: 2px 2px 15px rgba( 0, 0, 0, 0.2);
+    }
+    h4 {
+        font-size: 26px;
+    }
+    h5 {
+        margin-bottom: 40px;
+    }
+}
+
+.awards-vote {
     padding-top: 100px;
     padding-bottom: 100px;
     margin-bottom: 150px;
     background: #eee;
+    a {
+        color: #fff!important;
+    }
     h2 {
         margin-bottom: 50px;
         font-size: 50px;
+        display: block;
+        position: relative;
+        span {
+            position: relative;
+            svg {
+                position: absolute;
+                top: 2px;
+                right: -16px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+.awards {
+    margin-bottom: 75px;
+    
+    h2 {
+        margin-bottom: 50px;
+        font-size: 50px;
+        display: block;
+        position: relative;
+        span {
+            position: relative;
+            svg {
+                position: absolute;
+                top: 2px;
+                right: -16px;
+                width: 30px;
+                height: 30px;
+            }
+        }
     }
     .card {
         margin-bottom: 30px;
@@ -102,14 +189,7 @@ $font-family-base:       $font-family-sans-serif !default;
     }
 }
 
-.awards-vote {
-    margin-bottom: 150px;
-    
-    h2 {
-        margin-bottom: 50px;
-        font-size: 50px;
-    }
-}
+
 
 
 @media only screen and (max-width: 768px){
