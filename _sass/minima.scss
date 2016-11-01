@@ -221,6 +221,9 @@ $font-family-base:       $font-family-sans-serif !default;
     .splash-wrapper .fallback {
         display: block;
     }
+    .splash-wrapper video {
+        visibility: hidden;
+    }
 
     .splash-wrapper {
         .splash {
