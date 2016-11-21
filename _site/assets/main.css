@@ -5045,6 +5045,23 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
         margin-left: -15px; }
         .splash-wrapper .splash .headline svg:hover {
           cursor: pointer; }
+  .splash-wrapper .news {
+    position: absolute;
+    top: auto;
+    left: 0px;
+    width: 300px;
+    z-index: 300;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center; }
+    .splash-wrapper .news h3 {
+      color: #fff; }
+    .splash-wrapper .news svg {
+      width: 30px;
+      height: 30px; }
+    .splash-wrapper .news:hover {
+      cursor: pointer; }
 
 .agenda {
   margin-bottom: 75px;
@@ -5163,4 +5180,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     visibility: hidden; }
 
   .splash-wrapper .splash {
-    background: transparent; } }
+    background: transparent; }
+
+  .news h3 {
+    font-size: 14px; }
+  .news svg {
+    display: none; } }

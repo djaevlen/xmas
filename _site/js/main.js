@@ -24,5 +24,10 @@ jQuery(document).ready(function($) {
           scrollTop: $('#agenda').offset().top
         }, 1000);
     });
+    $('.news').click(function(event) {
+        $('html, body').animate({
+          scrollTop: $('#awards').offset().top
+        }, 1000);
+    });
 
 });
